@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        @php
+            $defaultTitle = 'Nargo Technologies | AI-Driven Software Solutions';
+            $defaultDescription = 'Nargo Technologies builds software products, AI agents, chatbots, automation systems, and digital growth platforms for modern businesses.';
+            $defaultKeywords = 'Nargo Technologies, software services, product development, AI agents, AI chatbots, digital marketing, automation, web development';
+            $seoTitle = trim($__env->yieldContent('title', $defaultTitle));
+            $seoDescription = trim(preg_replace('/\s+/', ' ', $__env->yieldContent('meta_description', $defaultDescription)));
+            $seoKeywords = trim($__env->yieldContent('meta_keywords', $defaultKeywords));
+            $seoRobots = trim($__env->yieldContent('meta_robots', 'index,follow'));
+            $canonicalUrl = trim($__env->yieldContent('canonical_url', url()->current()));
+            $ogTitle = trim($__env->yieldContent('og_title', $seoTitle));
+            $ogDescription = trim(preg_replace('/\s+/', ' ', $__env->yieldContent('og_description', $seoDescription)));
+            $ogType = trim($__env->yieldContent('og_type', 'website'));
+            $ogImage = trim($__env->yieldContent('og_image', asset('assets/brand/logo-full.png')));
+            $twitterCard = trim($__env->yieldContent('twitter_card', 'summary_large_image'));
+            $schemaType = trim($__env->yieldContent('schema_type', 'WebPage'));
+        @endphp
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>@yield('title', 'Nargo Technologies | AI-Driven Software Solutions')</title>
-        <meta
-            name="description"
-            content="@yield('meta_description', 'Nargo Technologies builds software products, AI agents, chatbots, automation systems, and digital growth platforms for modern businesses.')"
-        >
+        <title>{{ $seoTitle }}</title>
+        <meta name="description" content="{{ $seoDescription }}">
+        <meta name="keywords" content="{{ $seoKeywords }}">
+        <meta name="robots" content="{{ $seoRobots }}">
+        <meta name="author" content="Nargo Technologies">
+        <meta name="application-name" content="Nargo Technologies">
+        <meta name="theme-color" content="#78c143">
+        <link rel="canonical" href="{{ $canonicalUrl }}">
+
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="Nargo Technologies">
+        <meta property="og:type" content="{{ $ogType }}">
+        <meta property="og:title" content="{{ $ogTitle }}">
+        <meta property="og:description" content="{{ $ogDescription }}">
+        <meta property="og:url" content="{{ $canonicalUrl }}">
+        <meta property="og:image" content="{{ $ogImage }}">
+
+        <meta name="twitter:card" content="{{ $twitterCard }}">
+        <meta name="twitter:title" content="{{ $ogTitle }}">
+        <meta name="twitter:description" content="{{ $ogDescription }}">
+        <meta name="twitter:image" content="{{ $ogImage }}">
+
         <link rel="icon" type="image/png" href="{{ asset('assets/brand/logo-icon.png') }}">
         <link rel="apple-touch-icon" href="{{ asset('assets/brand/logo-icon.png') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -253,6 +286,32 @@
                 .page-hero { padding-top: 2rem; }
             }
         </style>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "name": "Nargo Technologies",
+                        "url": "{{ url('/') }}",
+                        "logo": "{{ asset('assets/brand/logo-full.png') }}",
+                        "email": "support@nargotech.com"
+                    },
+                    {
+                        "@type": "WebSite",
+                        "name": "Nargo Technologies",
+                        "url": "{{ url('/') }}"
+                    },
+                    {
+                        "@type": "{{ $schemaType }}",
+                        "name": "{{ $seoTitle }}",
+                        "url": "{{ $canonicalUrl }}",
+                        "description": "{{ $seoDescription }}"
+                    }
+                ]
+            }
+        </script>
 
         @stack('styles')
     </head>

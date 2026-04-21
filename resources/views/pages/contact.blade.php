@@ -1,6 +1,11 @@
 @extends('layouts.site')
 
 @section('title', 'Nargo Technologies | Contact')
+@section('meta_description', 'Contact Nargo Technologies for software services, AI agents, chatbot solutions, product build, automation, and digital marketing support.')
+@section('meta_keywords', 'contact Nargo Technologies, software project inquiry, AI project contact, chatbot development contact, digital marketing inquiry')
+@section('canonical_url', route('site.contact'))
+@section('og_type', 'website')
+@section('schema_type', 'ContactPage')
 
 @section('content')
     <section class="page-hero">

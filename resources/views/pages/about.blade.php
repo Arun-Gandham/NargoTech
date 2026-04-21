@@ -1,6 +1,11 @@
 @extends('layouts.site')
 
 @section('title', 'Nargo Technologies | About')
+@section('meta_description', 'Learn about Nargo Technologies, our software development approach, AI automation capabilities, product build expertise, and digital growth services.')
+@section('meta_keywords', 'about Nargo Technologies, software company, AI automation company, product build team, chatbot company, digital growth partner')
+@section('canonical_url', route('site.about'))
+@section('og_type', 'article')
+@section('schema_type', 'AboutPage')
 
 @section('content')
     <section class="page-hero">
