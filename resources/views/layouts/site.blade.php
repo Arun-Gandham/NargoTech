@@ -212,6 +212,40 @@
                 transition: all 0.25s ease;
             }
 
+            .fade-in,
+            .fade-up {
+                opacity: 0;
+                transition: opacity 0.7s ease, transform 0.7s ease;
+                will-change: opacity, transform;
+            }
+
+            .fade-in {
+                transform: translate3d(0, 0, 0);
+            }
+
+            .fade-up {
+                transform: translate3d(0, 28px, 0);
+            }
+
+            .is-visible {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+
+            .delay-1 { transition-delay: 0.1s; }
+            .delay-2 { transition-delay: 0.2s; }
+            .delay-3 { transition-delay: 0.3s; }
+            .delay-4 { transition-delay: 0.4s; }
+
+            @media (prefers-reduced-motion: reduce) {
+                .fade-in,
+                .fade-up {
+                    opacity: 1;
+                    transform: none;
+                    transition: none;
+                }
+            }
+
             @media (max-width: 767.98px) {
                 .navbar-brand img { width: 148px; }
                 .page-hero { padding-top: 2rem; }
@@ -234,6 +268,36 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const animatedElements = document.querySelectorAll('.fade-in, .fade-up');
+
+                if (!animatedElements.length) {
+                    return;
+                }
+
+                const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+                if (reduceMotion || !('IntersectionObserver' in window)) {
+                    animatedElements.forEach((element) => element.classList.add('is-visible'));
+                    return;
+                }
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.15,
+                    rootMargin: '0px 0px -40px 0px',
+                });
+
+                animatedElements.forEach((element) => observer.observe(element));
+            });
+        </script>
         @stack('scripts')
     </body>
 </html>

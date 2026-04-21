@@ -19,4 +19,5 @@ Route::controller(SiteController::class)->group(function () {
     Route::get('/services', 'services')->name('site.services');
     Route::get('/about', 'about')->name('site.about');
     Route::get('/contact', 'contact')->name('site.contact');
+    Route::post('/contact', 'submitContact')->name('site.contact.submit');
 });
