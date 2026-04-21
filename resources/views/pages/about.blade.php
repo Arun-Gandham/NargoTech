@@ -6,11 +6,11 @@
     <section class="page-hero">
         <div class="container">
             <div class="page-hero-content">
-                <div class="section-label mb-3">About us</div>
-                <h1 class="page-hero-title fw-bold mb-4">
+                <div class="section-label mb-3 fade-in">About us</div>
+                <h1 class="page-hero-title fw-bold mb-4 fade-up delay-1">
                     We build <span class="text-brand">software, AI systems, and digital growth engines</span> for modern businesses.
                 </h1>
-                <p class="section-copy fs-5 mb-0 mx-auto" style="max-width: 44rem;">
+                <p class="section-copy fs-5 mb-0 mx-auto fade-up delay-2" style="max-width: 44rem;">
                     Nargo Technologies combines software development, product execution, AI automation, chatbot systems,
                     and digital marketing into one connected service model designed for business growth.
                 </p>
@@ -22,7 +22,7 @@
         <div class="container">
             <div class="row g-4 align-items-stretch">
                 <div class="col-lg-7">
-                    <div class="info-card rounded-4 p-4 p-lg-5 bg-white h-100">
+                    <div class="info-card rounded-4 p-4 p-lg-5 bg-white h-100 fade-up">
                         <div class="section-label mb-2">Who we are</div>
                         <h2 class="section-title h1 fw-bold mb-3">A technology partner focused on useful execution.</h2>
                         <p class="section-copy mb-3">
@@ -43,7 +43,7 @@
                 </div>
 
                 <div class="col-lg-5">
-                    <div class="info-card rounded-4 p-4 p-lg-5 bg-white h-100">
+                    <div class="info-card rounded-4 p-4 p-lg-5 bg-white h-100 fade-up delay-1">
                         <div class="section-label mb-2">At a glance</div>
                         <div class="row g-3">
                             <div class="col-6">
@@ -88,7 +88,7 @@
 
     <section class="py-5 bg-brand-soft">
         <div class="container py-lg-4">
-            <div class="section-head">
+            <div class="section-head fade-up">
                 <div class="section-label mb-2">What we do</div>
                 <h2 class="section-title display-6 fw-bold">Core capabilities that support your full digital journey.</h2>
                 <p class="section-copy mb-0">
@@ -98,7 +98,7 @@
 
             <div class="row g-4">
                 <div class="col-md-6 col-xl-4">
-                    <div class="service-card rounded-4 p-4 h-100 bg-white">
+                    <div class="service-card rounded-4 p-4 h-100 bg-white fade-up delay-1">
                         <div class="service-icon mb-4">01</div>
                         <h3 class="h5 fw-bold">Software Development</h3>
                         <p class="section-copy mb-0">
@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-4">
-                    <div class="service-card rounded-4 p-4 h-100 bg-white">
+                    <div class="service-card rounded-4 p-4 h-100 bg-white fade-up delay-2">
                         <div class="service-icon mb-4">02</div>
                         <h3 class="h5 fw-bold">Product Build</h3>
                         <p class="section-copy mb-0">
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-4">
-                    <div class="service-card rounded-4 p-4 h-100 bg-white">
+                    <div class="service-card rounded-4 p-4 h-100 bg-white fade-up delay-3">
                         <div class="service-icon mb-4">03</div>
                         <h3 class="h5 fw-bold">AI Agents & Automation</h3>
                         <p class="section-copy mb-0">
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-4">
-                    <div class="service-card rounded-4 p-4 h-100 bg-white">
+                    <div class="service-card rounded-4 p-4 h-100 bg-white fade-up delay-1">
                         <div class="service-icon mb-4">04</div>
                         <h3 class="h5 fw-bold">Chatbot Solutions</h3>
                         <p class="section-copy mb-0">
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-4">
-                    <div class="service-card rounded-4 p-4 h-100 bg-white">
+                    <div class="service-card rounded-4 p-4 h-100 bg-white fade-up delay-2">
                         <div class="service-icon mb-4">05</div>
                         <h3 class="h5 fw-bold">Digital Marketing</h3>
                         <p class="section-copy mb-0">
@@ -143,7 +143,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xl-4">
-                    <div class="service-card rounded-4 p-4 h-100 bg-white">
+                    <div class="service-card rounded-4 p-4 h-100 bg-white fade-up delay-3">
                         <div class="service-icon mb-4">06</div>
                         <h3 class="h5 fw-bold">System Integration</h3>
                         <p class="section-copy mb-0">
@@ -159,7 +159,7 @@
         <div class="container py-lg-4">
             <div class="row g-4 align-items-stretch">
                 <div class="col-lg-6">
-                    <div class="info-card rounded-4 p-4 p-lg-5 bg-white h-100">
+                    <div class="info-card rounded-4 p-4 p-lg-5 bg-white h-100 fade-up">
                         <div class="section-label mb-2">How we work</div>
                         <h2 class="section-title h1 fw-bold mb-3">Clear process. Practical delivery. Better outcomes.</h2>
                         <p class="section-copy mb-4">
@@ -201,7 +201,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="info-card rounded-4 p-4 p-lg-5 bg-white h-100">
+                    <div class="info-card rounded-4 p-4 p-lg-5 bg-white h-100 fade-up delay-1">
                         <div class="section-label mb-2">Why clients choose us</div>
                         <h2 class="section-title h1 fw-bold mb-3">One team across product, AI, and growth.</h2>
                         <p class="section-copy mb-4">
@@ -224,7 +224,7 @@
 
     <section class="pb-5">
         <div class="container">
-            <div class="cta-card rounded-4 p-4 p-lg-5">
+            <div class="cta-card rounded-4 p-4 p-lg-5 fade-up">
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-8">
                         <div class="section-label mb-2">Work with us</div>
