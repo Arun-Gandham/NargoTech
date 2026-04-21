@@ -1,6 +1,6 @@
 <footer class="">
-    <div class="">
-        <div class="footer-main rounded-4 p-4 p-lg-5">
+    <div class="footer-main rounded-4 p-4 p-lg-5">
+            <div class="container">
             <div class="row g-4">
                 <div class="col-lg-4">
                     <img src="{{ asset('assets/brand/logo-full.png') }}" alt="Nargo Technologies logo" style="width: 180px;" class="mb-3">

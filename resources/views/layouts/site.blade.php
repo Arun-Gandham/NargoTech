@@ -8,6 +8,8 @@
             name="description"
             content="@yield('meta_description', 'Nargo Technologies builds software products, AI agents, chatbots, automation systems, and digital growth platforms for modern businesses.')"
         >
+        <link rel="icon" type="image/png" href="{{ asset('assets/brand/logo-icon.png') }}">
+        <link rel="apple-touch-icon" href="{{ asset('assets/brand/logo-icon.png') }}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -171,7 +173,7 @@
             .page-hero-content {
                 position: relative;
                 z-index: 1;
-                max-width: 50rem;
+                max-width: 60rem;
                 margin: 0 auto;
                 text-align: center;
             }
