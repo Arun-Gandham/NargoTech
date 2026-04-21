@@ -7,7 +7,6 @@
                     <p class="section-copy mb-3">
                         Nargo Technologies helps businesses build software products, AI agents, chatbots, and digital growth systems with a clean modern approach.
                     </p>
-                    <a href="mailto:support@nargotech.com" class="btn btn-brand rounded-pill px-4 py-2 fw-semibold">support@nargotech.com</a>
                 </div>
 
                 <div class="col-sm-6 col-lg-2">
